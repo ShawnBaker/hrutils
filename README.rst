@@ -1,14 +1,17 @@
-# Home Router Utilities
+Home Router Utilities
+=====================
 
 This is a C extension that provides the ability to read and write various
 Linux networking configuration values. At this time it has only been tested
 with Python 3.5 on Ubuntu Server 17.04.
 
-## Copyright and License
+Copyright and License
+---------------------
 
-Copyright &copy; 2017 Shawn Baker using the [MIT License](https://opensource.org/licenses/MIT).
+Copyright &copy; 2017 Shawn Baker using the _MIT License: https://opensource.org/licenses/MIT
 
-## Entry Points
+Entry Points
+------------
 
 	- get_host_name()
 	- set_host_name(name)
@@ -17,7 +20,8 @@ Copyright &copy; 2017 Shawn Baker using the [MIT License](https://opensource.org
 	- get_interfaces()
 	- get_interface(name)
 
-## Constants
+Constants
+---------
 
 	- IFF_ALLMULTI
 	- IFF_AUTOMEDIA
@@ -39,7 +43,8 @@ Copyright &copy; 2017 Shawn Baker using the [MIT License](https://opensource.org
 	- IFF_SLAVE
 	- IFF_UP
 
-## Classes
+Classes
+-------
 
 Interface
 	* fields
