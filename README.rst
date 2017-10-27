@@ -1,4 +1,4 @@
-.. include:: isonum.txt
+.. |copy|   unicode:: U+000A9 .. COPYRIGHT SIGN
 
 Home Router Utilities
 =====================
