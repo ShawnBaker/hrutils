@@ -19,7 +19,7 @@ setup(	name = 'hrutils',
 		description = 'Home Router utilities.',
 		long_description = long_description,
 
-		url = 'http://www.frozen.ca',
+		url = 'https://github.com/ShawnBaker/hrutils',
 		
 		author = 'Shawn Baker',
 		author_email = 'shawn@frozen.ca',
