@@ -1,3 +1,5 @@
+.. include:: <isonum.txt>
+
 Home Router Utilities
 =====================
 
@@ -8,7 +10,7 @@ with Python 3.5 on Ubuntu Server 17.04.
 Copyright and License
 ---------------------
 
-Copyright |copy| 2017 Shawn Baker using the `MIT License <https://opensource.org/licenses/MIT>`_
+Copyright |copy| 2017 Shawn Baker using the `MIT License <https://opensource.org/licenses/MIT>`_.
 
 Entry Points
 ------------
