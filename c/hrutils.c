@@ -96,10 +96,12 @@ PyObject *find_interface(PyObject *list, char *name)
 	for (int i = 0; i < PyList_Size(list); i++)
 	{
 		PyObject *interface = PyList_GetItem(list, i);
-		PyObject *str = PyDict_GetItemString(interface, NAME_KEY);
-		PyObject *encoded_str = PyUnicode_AsUTF8String(str);
-		const char *interface_name = PyBytes_AsString(encoded_str);
-		if (strcmp(interface_name, name) == 0)
+		PyObject *item = PyDict_GetItemString(interface, NAME_KEY);
+		PyObject *str = PyUnicode_AsUTF8String(item);
+		const char *interface_name = PyBytes_AsString(str);
+		int result = strcmp(interface_name, name);
+		Py_DECREF(str);
+		if (result == 0)
 		{
 			return interface;
 		}
@@ -174,7 +176,7 @@ static PyObject* get_interfaces(PyObject *self, PyObject *args)
 	// get the linked list of interfaces
 	if (getifaddrs(&ifaddr) == -1)
 	{
-		return Py_BuildValue("i", -1);
+		Py_RETURN_NONE;
 	}
 
 	// traverse the linked list of interfaces
